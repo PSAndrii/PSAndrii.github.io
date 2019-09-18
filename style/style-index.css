@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding-top: 15px;
+    padding-bottom: 15px; 
+}
+.header{
+        display: flex;
+        justify-content: center;
+       
+}
+.header-photo{
+    display: flex;
+
+}
+.photo {
+    -moz-border-radius: 150px;
+     -webkit-border-radius: 150px;
+      border-radius: 150px;
+      align-items: center
+   }
+   header:hover .photo {
+     box-shadow:  0 0  5px #000;
+   }
+.info-text {
+     color: #000;
+
+   }
+#date{
+    display: none;
+  }
+.info-padding{
+       padding-top: 1.5em;
+        padding-left: 2em;
+   }
+.info-td {
+    width: 120px;
+  }
+.contact-me-padding{
+        padding-top: 1em;
+        padding-left: 1em;
+}
+
+.border-top {
+    position: absolute;
+    border-color: rgba(255, 255, 255, 1) transparent transparent transparent;
+    border-style: solid;
+    border-width: 80px 50vw 0 50vw;
+    height: 0;
+    width: 0;
+}
+
+.skills-background-color{
+    background-color: rgb(227, 228, 228);
+
+}
+
+.inner-section-align{
+     display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-padding{
+       padding-top: 7em;
+       padding-bottom: 5em;
+}
+.paragraph{
+    text-transform: capitalize;
+    
+}
+section:hover .paragraph {
+    text-shadow: 1px 1px 2px red;
+}
+
+.border-down {
+    width: 0;
+    height: 0;
+    content: "";
+    bottom: 80px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    border-left: 50vw solid #ffffff;
+    border-right: 50vw solid #ffffff;
+    border-top: 80px solid transparent;
+}
+
+.td-curses{
+    width: 200px;
+}
+.courses-anchor{
+    text-decoration: none;
+    color: darkred
+
+}
+.courses-anchor:hover{
+    color: rgb(20, 3, 94)
+}
+.table-curses-width{
+    width: 360px;
+}
+.table-curses-padding{
+    padding-top: 10px;
+}
+.line{
+    border: none;
+    width: 100px;
+    height: 2px;
+}
+.line-color{
+     color:  aqua;
+    background-color:  aqua;
+}
+.line-margin{
+     margin: 10px 0 10px;
+}
+
+.table-experience-width{
+    width: 450px;
+}
+.table-experience-padding{
+    padding: 10px;
+}
+.inner-td-padding{
+    padding: 5px;
+}
+.align-job-discription{
+    vertical-align: text-top;
+}
