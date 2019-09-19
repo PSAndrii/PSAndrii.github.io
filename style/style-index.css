@@ -3,9 +3,10 @@
     padding: 0;
 }
 
-header{
+header {
         height: 100vh; 
 }
+
 .header-pading-top {
     padding-top: 5em;
 }
@@ -92,7 +93,7 @@ header{
     cursor: pointer;
 }
 .circle-border-icon {
-       border-radius: 50%;
+    border-radius: 50%;
 }
 .btn_skill_for_scroll-position{ 
     top: 40vh;
@@ -118,21 +119,30 @@ header{
     background-color: rgb(227, 228, 228);
 
 }
+.icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ul-skills-padding {
+    padding-top: 1rem;
+}
 
 .inner-section-align{
-     display:flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
 }
 .inner-section-padding{
-       padding-top: 7em;
+       padding-top: 6em;
        padding-bottom: 5em;
 }
-.section-poding {
-    padding: 5rem 0;
+.section-padding {
+    padding: 6rem 0;
 }
 .paragraph{
     text-transform: capitalize;
+    padding: 0 10px;
     
 }
 section:hover .paragraph {
@@ -168,7 +178,7 @@ section:hover .paragraph {
     width: 360px;
 }
 .table-curses-padding{
-    padding-top: 10px;
+    padding-top: 3rem;
 }
 .line{
     border: none;
@@ -180,18 +190,43 @@ section:hover .paragraph {
     background-color:  aqua;
 }
 .line-margin{
-     margin: 10px 0 10px;
+     margin: 10px 0;
 }
 
 .table-experience-width{
     width: 450px;
 }
 .table-experience-padding{
-    padding: 10px;
+    padding: 20px;
 }
 .inner-td-padding{
     padding: 5px;
 }
 .align-job-discription{
     vertical-align: text-top;
+}
+
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+  
+}
+
+.sprite-courses {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -5px;
+}
+
+.sprite-experience {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -65px;
+}
+
+.sprite-skill {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -125px;
 }
