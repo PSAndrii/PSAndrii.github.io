@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Petrov Andriy</title>
     <link rel="stylesheet" type="text/css" href="style/style-index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -41,14 +42,14 @@
                 <a class="header-link-anchor-padding" title="gmail" href="mailto: petrov.ua89@gmail.com"><img src="images/gmail.png" height="40" width="40"/></a>
                 <a class="header-link-anchor-padding" title="telegram" href="tg://resolve?domain=+380937651579"><img src="images/telegram.png" height="40" width="40"/></a>
             </div>
-           
+           <button class="btn_up"></button>
        
        
     </header>
             <div class="border-top"></div> 
     
-    <section class="skills-background-color">
-                <div class="inner-section-align skills-padding">
+    <section class="section-background-color section-poding">
+                <div class="inner-section-align inner-section-padding">
                 <div>
                  <h2 class="paragraph">skills</h2>
             </div>
@@ -71,8 +72,39 @@
             </div>
     </section>
     <div class="border-down"></div>
-    <section>
-            <div class="inner-section-align">
+    <section class="section-poding">
+            <div class="inner-section-align ">
+                    <div>
+                            <h2 class="paragraph">experience</h2>
+                       </div>
+    
+    
+                    <table class="table-experience-width table-experience-padding">
+                        <tr>
+                            <td class="inner-td-padding">Company</td>
+                            <td class="inner-td-padding">WhaleApp (IT-software Manufacturing)</td>
+                        </tr>
+                        <tr>
+                            <td class="inner-td-padding">Start / end</td>
+                            <td class="inner-td-padding"> April 2018 - June 2019</td>
+                         </tr>
+                        <tr>
+                            <td class="inner-td-padding">Position</td>
+                            <td class="inner-td-padding">QC Tester</td>
+                        </tr>
+                        <tr>
+                            <td class="inner-td-padding align-job-discription">Job description</td>
+                            <td class="inner-td-padding">Functional, non-functional(performance,usability,etc), regression, smoke, acceptance testing,
+                                 mobile and browser games.
+                                <br>Writing and control bug reports.</td>
+                        </tr>
+                    </table>
+            </div> 
+            
+    </section>
+    <div class="border-top"></div> 
+    <section class="section-background-color section-poding">
+            <div class="inner-section-align inner-section-padding">
                     <div>
                      <h2 class="paragraph">courses</h2>
                 </div>
@@ -116,60 +148,47 @@
                                 <td>3 months</td>
                             </tr>
                         </table>
-                    </div>
-    </section>
-    <div class="border-top"></div> 
-    <section class="skills-background-color">
-               <div class="inner-section-align skills-padding">
-                <div>
-                        <h2 class="paragraph">experience</h2>
-                   </div>
-
-
-                <table class="table-experience-width table-experience-padding">
-                    <tr>
-                        <td class="inner-td-padding">Company</td>
-                        <td class="inner-td-padding">WhaleApp (IT-software Manufacturing)</td>
-                    </tr>
-                    <tr>
-                        <td class="inner-td-padding">Start / end</td>
-                        <td class="inner-td-padding"> April 2018 - June 2019</td>
-                     </tr>
-                    <tr>
-                        <td class="inner-td-padding">Position</td>
-                        <td class="inner-td-padding">QC Tester</td>
-                    </tr>
-                    <tr>
-                        <td class="inner-td-padding align-job-discription">Job description</td>
-                        <td class="inner-td-padding">Functional, non-functional(performance,usability,etc), regression, smoke, acceptance testing,
-                             mobile and browser games.
-                            <br>Writing and control bug reports.</td>
-                    </tr>
-                </table>
-        </div> 
+                    </div>  
     </section>
 
 
 
 
-    <script>
+<script>
 
-let input = document.getElementById('date');
-let result = document.getElementById('result');
-input.onchange = getAge;
-getAge();
-function getAge() {
-  let strDate = document.getElementById('date').value;
-  let arrDate = strDate.split(/\D+/g);
-  let date = new Date(arrDate[2], arrDate[1] - 1, arrDate[0]);
-  let now = new Date();
-  let age = now.getFullYear() - date.getFullYear();
-  now.setFullYear(date.getFullYear());
-  if (now < date) age--;
-  result.innerHTML = age+' years old';
-}
-    
-    
-    </script>
+    let input = document.getElementById('date');
+    let result = document.getElementById('result');
+    input.onchange = getAge;
+    getAge();
+     function getAge() {
+        let strDate = document.getElementById('date').value;
+        let arrDate = strDate.split(/\D+/g);
+        let date = new Date(arrDate[2], arrDate[1] - 1, arrDate[0]);
+        let now = new Date();
+        let age = now.getFullYear() - date.getFullYear();
+        now.setFullYear(date.getFullYear());
+        if (now < date) age--;
+        result.innerHTML = age+' years old';
+    }    
+</script>
+
+<script>
+$('body').append('<button class="btn_up" />');
+$('.btn_up').click(function() {
+    $('body').animate({'scrollTop': 0 }, 1000);
+    $('html').animate({'scrollTop': 0 }, 1000);
+});
+
+$(window).scroll(function(){
+    if($(window).scrollTop() > 200){
+        $('.btn_up').addClass('active');
+    }
+    else{
+        $('.btn_up').removeClass('active');
+    }
+});
+
+</script>
+
 </body>
 </html>
