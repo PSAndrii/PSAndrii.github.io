@@ -44,12 +44,15 @@
                 <a class="header-link-anchor-padding" title="telegram" href="tg://resolve?domain=+380937651579"><img src="images/telegram.png" height="40" width="40"/></a>
             </div>
            <button class="btn_up"></button>
-       
+
+       <a class="btn_for_scroll btn_skill_for_scroll-position" id="btn_skill"><img title="skills" class="circle-border-icon" src="images/skill.png" alt="skills"></a>
+       <a class="btn_for_scroll btn_exp_for_scroll-position" id="btn_exp"><img title="experience" class="circle-border-icon" src="images/experience.png" alt="experience"></a>
+       <a class="btn_for_scroll btn_courses_for_scroll-position" id="btn_courses"><img title="courses" class="circle-border-icon" src="images/courses.png" alt="courses"></a>
        
     </header>
             <div class="border-top"></div> 
     
-    <section class="section-background-color section-poding">
+    <section id="btn_skill_scroll" class="section-background-color section-poding">
                 <div class="inner-section-align inner-section-padding">
                 <div>
                  <h2 class="paragraph">skills</h2>
@@ -72,7 +75,7 @@
                 </ul>
             </div>
     </section>
-    <div class="border-down"></div>
+    <div id="btn_exp_scroll" class="border-down"></div>
     <section class="section-poding">
             <div class="inner-section-align ">
                     <div>
@@ -104,7 +107,7 @@
             
     </section>
     <div class="border-top"></div> 
-    <section class="section-background-color section-poding">
+    <section id="btn_courses_scroll" class="section-background-color section-poding">
             <div class="inner-section-align inner-section-padding">
                     <div>
                      <h2 class="paragraph">courses</h2>
@@ -190,6 +193,27 @@ $(window).scroll(function(){
 });
 
 </script>
+
+<script>
+        $('#btn_skill').click(function(a){
+        a.preventDefault();
+        $('body, html').animate({ scrollTop: $('#btn_skill_scroll').offset().top }, 1000);
+        });
+</script>
+<script>
+        $('#btn_exp').click(function(b){
+        b.preventDefault();
+        $('body, html').animate({ scrollTop: $('#btn_exp_scroll').offset().top }, 1000);
+        });
+</script>
+<script>
+        $('#btn_courses').click(function(c){
+        c.preventDefault();
+        $('body, html').animate({ scrollTop: $('#btn_courses_scroll').offset().top }, 1000);
+        });
+</script>
+
+
 
 </body>
 </html>

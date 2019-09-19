@@ -84,6 +84,26 @@ header{
     right: 0;
     margin: auto;
 }
+.btn_for_scroll {
+    position: fixed;
+    left: 20px;
+    z-index: 100;
+    outline: 0!important; 
+    cursor: pointer;
+}
+.circle-border-icon {
+       border-radius: 50%;
+}
+.btn_skill_for_scroll-position{ 
+    top: 40vh;
+}   
+.btn_exp_for_scroll-position{
+    top: 50vh;
+}    
+.btn_courses_for_scroll-position{   
+    top: 60vh; 
+
+}
 
 
 .border-top {
