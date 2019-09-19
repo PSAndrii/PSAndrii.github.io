@@ -186,11 +186,11 @@ section:hover .paragraph {
     height: 2px;
 }
 .line-color{
-     color:  aqua;
-    background-color:  aqua;
+
+    background-color:  rgb(73, 18, 160);
 }
 .line-margin{
-     margin: 10px 0;
+     margin-top: 40px;
 }
 
 .table-experience-width{
