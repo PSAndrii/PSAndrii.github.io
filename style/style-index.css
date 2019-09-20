@@ -10,61 +10,49 @@ header {
         height: 100vh; 
 }
 
-.header-pading-top {
-    padding-top: 5em;
-}
-.header{
-    display: flex;
-    justify-content: center;
-    margin-left: 70px;
-    margin-right: 50px;        
-        
-}
-.header-photo-padding {
-    padding-top: 2em;
-}
-.photo {
-    -moz-border-radius: 50%;
-     -webkit-border-radius: 50%;
-      border-radius: 50%;
-      align-items: center;
-      box-shadow:  0 0  5px #000;
-   }
-a {
-    text-decoration: none;
-    color: #000;
-    
-}
-.info-text {
-     color: #000;
 
-   }
-#date{
-    display: none;
-  }
-.info-padding{
-    padding-top: 3em;
-    padding-left: 1.8em;
-   }
-.info-td {
-    width: 125px;
-  }
-.info-td-height{
-    height: 40px;
-  } 
-.align-email {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-   
+
+/* ліве меню  для скролінга */
+
+.scroll_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 55px;
+    background-color: rgb(202, 199, 199);
+    z-index: 2;
 }
-.email-active {
-    display: none;
-}
-.active2:hover .email-active {
-display: inline;    
+.btn_for_scroll {
+    position: fixed;
+    left: 2px;
+    z-index: 100;
+    outline: 0!important; 
+    cursor: pointer;
 }
 
+.btn_skill_for_scroll-position{ 
+    top: 40vh;
+}   
+.btn_exp_for_scroll-position{
+    top: 50vh;
+}    
+.btn_courses_for_scroll-position{   
+    top: 60vh; 
+
+}
+
+/* профілі з правої сторони екрану  conact_items*/
+
+.contact_items {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 42px;
+    background-color: rgb(202, 199, 199);
+    z-index: 2;
+}
 
 .header-link {
     display: flex;
@@ -84,6 +72,70 @@ p {
 .header-link-anchor-padding {
     padding: 1rem 0;
 }
+a {
+    text-decoration: none;
+    color: #000;
+    
+}
+
+/* header фото + дані про мене  */
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 50px;        
+        
+}
+.header-pading-top {
+    padding-top: 5em;
+}
+
+.header-photo-padding {
+    padding-top: 2em;
+}
+.photo {
+    -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+      border-radius: 50%;
+      align-items: center;
+      box-shadow:  0 0  5px #000;
+   }
+
+.info-padding{
+    padding-top: 3em;
+    padding-left: 1.8em;
+   }
+   
+.info-text {
+     color: #000;
+
+   }
+
+.info-td {
+    width: 125px;
+  }
+.align-email {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+   
+}
+.email-active {
+    display: none;
+}
+
+.active2:hover .email-active {
+display: inline;    
+}
+
+
+#date{
+    display: none;
+  }
+
+
+/*  кнопка скрол вверх */
 
 .btn_up {
     position: fixed;
@@ -119,59 +171,21 @@ p {
     margin: auto;
 }
 
-.scroll_menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 70px;
-    background-color: rgb(202, 199, 199);
-    z-index: 2;
-}
 
-.contsct_items {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 50px;
-    background-color: rgb(202, 199, 199);
-    z-index: 2;
-}
-
-.btn_for_scroll {
-    position: fixed;
-    left: 10px;
-    z-index: 100;
-    outline: 0!important; 
-    cursor: pointer;
-}
 .circle-border-icon {
     border-radius: 50%;
 }
-.btn_skill_for_scroll-position{ 
-    top: 40vh;
-}   
-.btn_exp_for_scroll-position{
-    top: 50vh;
-}    
-.btn_courses_for_scroll-position{   
-    top: 60vh; 
 
-}
-
-
-
+/* Оптимізація сторінки під розміри */
 
 
 @media screen and (max-width:660px) {
     .header{
         display: flex;
         flex-direction: column;
-        align-items: center
-              
-            
+        align-items: center          
     }
+  
 }
 @media screen and (max-width:460px) {
     .header{
@@ -182,26 +196,13 @@ p {
     .header-screem-min {
         display: none;
     }
+    
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* стрівка в низ на всю сторінку */
 
 .border-top {
     position: absolute;
@@ -211,19 +212,19 @@ p {
     height: 0;
     width: 0;
 }
+
+
+/* перша секція зі скілами */
+
 .section-background-color{
     background-color: rgb(227, 228, 228);
 
 }
-.icon-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.ul-skills-padding {
-    padding-top: 1rem;
-}
+/* компенсуємо бокові меню. */
 
+.section-padding {
+    padding: 6rem 52px 6rem 75px;
+}
 .inner-section-align{
     display:flex;
     flex-direction: column;
@@ -233,14 +234,25 @@ p {
        padding-top: 6em;
        padding-bottom: 5em;
 }
-.section-padding {
-    padding: 6rem 0;
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .paragraph{
     text-transform: capitalize;
     padding: 0 10px;
     
 }
+.ul-skills-padding {
+    padding-top: 1rem;
+
+}
+
+
+/* стрілка на всю сторінка */
 
 .border-down {
     width: 0;
@@ -255,35 +267,9 @@ p {
     border-top: 80px solid transparent;
 }
 
-.td-curses{
-    width: 200px;
-}
-.courses-anchor{
-    text-decoration: none;
-    color: darkred
 
-}
-.courses-anchor:hover{
-    color: rgb(20, 3, 94)
-}
-.table-curses-width{
-    width: 360px;
-}
-.table-curses-padding{
-    padding-top: 3rem;
-}
-.line{
-    border: none;
-    width: 100px;
-    height: 2px;
-}
-.line-color{
+/* секція с опитом роботи */
 
-    background-color:  #000;
-}
-.line-margin{
-     margin-top: 40px;
-}
 
 .table-experience-width{
     width: 450px;
@@ -297,6 +283,65 @@ p {
 .align-job-discription{
     vertical-align: text-top;
 }
+
+@media screen and (max-width:600px) {
+    .table-experience-width{
+        width: 300px;
+    }
+}
+
+
+/* секція з навчаннят (курси) */
+
+
+.table-curses-width{
+    width: 360px;
+}
+
+.table-curses-padding{
+    padding-top: 3rem;
+}
+
+.td-curses{
+    width: 200px;
+}
+.courses-anchor{
+    text-decoration: none;
+    color: darkred
+
+}
+.courses-anchor:hover{
+    color: rgb(20, 3, 94)
+}
+
+@media screen and (max-width:600px) {
+    .table-curses-width{
+        width: 280px;
+    }
+
+    .td-curses{
+        width: 140px;
+    }
+}
+
+
+/* лінія між курсами для розподілу */
+
+.line{
+    border: none;
+    width: 100px;
+    height: 2px;
+}
+.line-color{
+
+    background-color:  #000;
+}
+.line-margin{
+     margin-top: 40px;
+}
+
+
+/* картінки які розміщуються поряд з скілами, опито, курсами */
 
 .sprite {
     background-image: url(../images/spritesheet.png);
