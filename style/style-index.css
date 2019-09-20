@@ -223,7 +223,7 @@ display: inline;
 /* компенсуємо бокові меню. */
 
 .section-padding {
-    padding: 6rem 52px 6rem 75px;
+    padding: 6rem 52px 1rem 75px;
 }
 .inner-section-align{
     display:flex;
