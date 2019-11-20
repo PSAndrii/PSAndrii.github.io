@@ -2,9 +2,15 @@
     margin: 0;
     padding: 0;
     }
-    body {
+body {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 18px;
+ background-image: url(../images/);
+         background-repeat: no-repeat;
+         -webkit-background-size: cover;
+         background-size: cover; 
+
+
     }
 header {
         height: 100vh; 
@@ -19,7 +25,7 @@ header {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 55px;
+    width: 35px;
     background-color: rgb(202, 199, 199);
     z-index: 2;
 }
@@ -31,26 +37,56 @@ header {
     cursor: pointer;
 }
 
+.btn_proof_for_scroll-position{ 
+    top: 18%;
+} 
+
 .btn_skill_for_scroll-position{ 
-    top: 40vh;
+    top: 40%;
 }   
 .btn_exp_for_scroll-position{
-    top: 50vh;
+    top: 50%;
 }    
 .btn_courses_for_scroll-position{   
-    top: 60vh; 
-
+    top: 60%; 
 }
 
-/* профілі з правої сторони екрану  conact_items*/
+.btn-prof{
+    position: fixed;
+    left: 5px;
+    border: 1px solid ;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    box-shadow:  -4px 4px;
+    background-color: white; 
+    
+}
+.lines-profils{
+    margin-top:9px;
+    line-height: 0.1rem;
+    margin-left: 2px;
+}
+.line-profils{
+    margin: 0.125rem;
+    border: none;
+    width: 20px;
+    height: 0.125rem;
+}
+.line-color-profils{
+    background-color:  #000;
+}
+
+
+/* профілі з лівох сторони екрану  conact_items*/
 
 .contact_items {
+    display: none;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 5%;
+    left: 35px;
     bottom: 0;
-    width: 42px;
-    background-color: rgb(202, 199, 199);
+    width: 35px;
     z-index: 2;
 }
 
@@ -60,17 +96,11 @@ header {
     align-items: center;
 }
 .header-place{
-    padding-top: 12vh;
+    padding-top: 5%;
 }
-p {
-    color: #fff;
-    text-shadow: 1.5px 1.5px 3px #000;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-bottom: 5px;
-}
+
 .header-link-anchor-padding {
-    padding: 1rem 0;
+    margin: 0.5rem 0;
 }
 a {
     text-decoration: none;
@@ -78,13 +108,17 @@ a {
     
 }
 
+
+
+
+
+
 /* header фото + дані про мене  */
 
 .header{
     display: flex;
     justify-content: center;
-    margin-left: 70px;
-    margin-right: 50px;        
+    margin-left: 50px;   
         
 }
 .header-pading-top {
@@ -135,12 +169,12 @@ display: inline;
   }
 
 
-/*  кнопка скрол вверх */
+/*  кнопка скрол вверх, розмыщена в лівому низу*/
 
 .btn_up {
     position: fixed;
     bottom: -50px;
-    right: 100px;
+    left: 2.5px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -201,19 +235,6 @@ display: inline;
 
 
 
-
-/* стрівка в низ на всю сторінку */
-
-.border-top {
-    position: absolute;
-    border-color: rgba(255, 255, 255, 1) transparent transparent transparent;
-    border-style: solid;
-    border-width: 80px 50vw 0 50vw;
-    height: 0;
-    width: 0;
-}
-
-
 /* перша секція зі скілами */
 
 .section-background-color{
@@ -223,7 +244,7 @@ display: inline;
 /* компенсуємо бокові меню. */
 
 .section-padding {
-    padding: 6rem 52px 1rem 75px;
+    padding: 5rem 5px 1rem 75px;
 }
 .inner-section-align{
     display:flex;
@@ -231,8 +252,7 @@ display: inline;
     align-items: center;
 }
 .inner-section-padding{
-       padding-top: 6em;
-       padding-bottom: 5em;
+       padding-bottom: 2em;
 }
 
 .icon-text {
@@ -249,22 +269,6 @@ display: inline;
 .ul-skills-padding {
     padding-top: 1rem;
 
-}
-
-
-/* стрілка на всю сторінка */
-
-.border-down {
-    width: 0;
-    height: 0;
-    content: "";
-    bottom: 80px;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
-    border-left: 50vw solid #ffffff;
-    border-right: 50vw solid #ffffff;
-    border-top: 80px solid transparent;
 }
 
 
@@ -341,7 +345,7 @@ display: inline;
 }
 
 
-/* картінки які розміщуються поряд з скілами, опито, курсами */
+/* картинки які розміщуються поряд з скілами, опитом, курсами */
 
 .sprite {
     background-image: url(../images/spritesheet.png);
