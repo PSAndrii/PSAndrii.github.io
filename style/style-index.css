@@ -244,7 +244,7 @@ display: inline;
 /* компенсуємо бокові меню. */
 
 .section-padding {
-    padding: 5rem 5px 1rem 75px;
+    padding: 3rem 5px 1rem 75px;
 }
 .inner-section-align{
     display:flex;
