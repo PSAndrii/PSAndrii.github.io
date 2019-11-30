@@ -10,12 +10,11 @@ body {
         background-size: cover;
         color: rgb(6, 28, 66);
         font-family: 'Josefin Sans', sans-serif;
-
+        background-attachment: fixed;
     }
 header {
         height: 100vh; 
 }
-
 
 
 /* ліве меню  для скролінга */
