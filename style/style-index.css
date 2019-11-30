@@ -164,7 +164,7 @@ a {
 .align-email {
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 230px;
    
 }
 .email-active {
@@ -329,7 +329,7 @@ display: inline;
 
 }
 .courses-anchor:hover{
-    color: #FFFF00;
+    color: #ffca18;
 }
 
 @media screen and (max-width:600px) {
