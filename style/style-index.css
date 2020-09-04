@@ -251,6 +251,10 @@ display: inline;
 
 
 /* перша секція зі скілами */
+section{
+    box-sizing: border-box;
+    height: 100vh;
+}
 
 .section-background-color{
     background-color: rgba(6, 28, 66, 0.7);
@@ -260,7 +264,7 @@ display: inline;
 /* компенсуємо бокові меню. */
 
 .section-padding {
-    padding: 3rem 5px 1rem 75px;
+    padding: 10% 5px 1rem 75px;
 }
 .inner-section-align{
     display:flex;
@@ -283,6 +287,11 @@ display: inline;
     text-shadow: 0 0 1px;
     
 }
+
+section:hover .paragraph {
+    text-shadow: 3px 5px 5px;    
+    }
+
 .ul-skills-padding {
     padding-top: 1rem;
 
@@ -293,10 +302,10 @@ display: inline;
 
 
 .table-experience-width{
-    width: 450px;
+    min-width: 280px;
 }
 .table-experience-padding{
-    padding: 20px;
+    padding: auto 0;
 }
 .inner-td-padding{
     padding: 5px;
@@ -307,7 +316,7 @@ display: inline;
 
 @media screen and (max-width:600px) {
     .table-experience-width{
-        width: 300px;
+        width: 280px;
     }
 }
 
@@ -316,11 +325,11 @@ display: inline;
 
 
 .table-curses-width{
-    width: 360px;
+    min-width: 360px;
 }
 
 .table-curses-padding{
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .td-curses{
@@ -336,8 +345,9 @@ display: inline;
 }
 
 @media screen and (max-width:600px) {
+
     .table-curses-width{
-        width: 280px;
+        min-width: 280px;
     }
 
     .td-curses{
@@ -350,15 +360,13 @@ display: inline;
 
 .line{
     border: none;
-    width: 100px;
     height: 2px;
 }
 .line-color{
-
     background-color:  #000;
 }
 .line-margin{
-     margin-top: 40px;
+     margin: 10px 30%;
 }
 
 

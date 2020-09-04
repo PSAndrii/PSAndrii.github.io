@@ -75,22 +75,22 @@
                     <h2 class="paragraph">skills</h2>
             </div>
                 <ul class="ul-skills-padding">
-                    <li>HTML/CSS;</li>
-                    <li>Flex;</li>
                     <li>Javascript basics;</li>
-                    <li>JQuery</li>
-                    <li>PHP basics;</li>
+                    <li>PHP procedural and OOP basic;</li>
+                    <li>HTML/CSS;</li>
+                    <li>JQuery;</li>
                     <li>Adaptive layout using media queries;</li>
+                    <li>Layout flex;</li>
                     <li>Layout grid;</li>
                     <li>Console, basic commands and technologies;</li>
                     <li>Git;</li>
                     <li>Agile, Scrum/Kanban;</li>
                     <li>Software testing;</li>
+                    <li>Web/desktop/mobile applications testing;</li>
                     <li>Software Development Life Cycle;</li>
                     <li>Bug tracking tool(s) and process usage;</li>
-                    <li>QA methodologies and testing tools;</li>
+                    <li>QA methodologies;</li>
                     <li>JIRA, Mantis, TestLink;</li>
-                    <li>Web/desktop/mobile applications testing;</li>
                 </ul>
             </div>
     </section>
@@ -115,15 +115,19 @@
                         </tr>
                         <tr>
                             <td class="inner-td-padding align-job-discription">Job description</td>
-                            <td class="inner-td-padding">Functional, non-functional (performance, usability, etc), regression, smoke, acceptance testing,
-                                 mobile and browser games.
-                                <br>Writing and control bug reports.</td>
+                            <td class="inner-td-padding">
+                                - Black Box testing. Functional, non-functional, regression, re-testing, ad-hoc, smoke, acceptance testing,
+                                <br>- Writing and control bug reports,
+                                <br>- Explore of documentation,
+                                <br>- Proposing of new features,
+                                <br>- Tools: Android Studio.
+                            </td>
                         </tr>
                     </table>
             </div> 
             
     </section>
-    <section id="btn_courses_scroll" class="section-background-color section-padding">
+    <section id="btn_courses_scroll" class="qq section-background-color section-padding">
             <div class="inner-section-align inner-section-padding">
                     <div class="icon-text">
                         <h2 class="paragraph">courses</h2>
@@ -135,20 +139,23 @@
                             </tr>
                             <tr>
                                 <td>Topic</td>
-                                <td >Web programming</td>
+                                <td>Web programming</td>
                             </tr>
                             <tr>
                                 <td>Year of occurrence</td>
-                                <td>By this time</td>
+                                <td>2020</td>
                             </tr>
                             <tr>
                                 <td>Duration</td>
                                 <td>5 months</td>
                             </tr>
-                        </table>
-                   
-                    <hr class="line line-color line-margin">
-                        <table class="table-curses-width table-curses-padding">
+                     
+                        <tr>
+                            <td colspan="2">
+                            <hr class="line line-color line-margin">
+                            </td> 
+                        </tr>
+                        
                             <tr>
                                 <td class="td-curses">Training company</td>
                                 <td><a class="courses-anchor" target="_blank" href="https://dan-it.com.ua/en/program/programming-essentials/">DAN.IT</a></td>
@@ -165,11 +172,13 @@
                                 <td>Duration</td>
                                 <td>2 months</td>
                             </tr>
-                        </table>
-                   
-                    <hr class="line line-color line-margin">
-                    <div class="">
-                        <table class="table-curses-width table-curses-padding">
+ 
+                            <tr>
+                                <td colspan="2">
+                                <hr class="line line-color line-margin">
+                            </td> 
+                            </tr>
+
                             <tr>
                                 <td class="td-curses">Training company</td>
                                 <td><a class="courses-anchor" target="_blank" href=" http://skillup.ua/kiev/test-course/?utm_medium=referal&utm_campaign=button&utm_source=site">SkillUp</a></td>
@@ -187,75 +196,69 @@
                                 <td>3 months</td>
                             </tr>
                         </table>
-                    </div>  
+                    
     </section>
-
-<script>
-    changeBlock = function(id) {
-        var u = document.getElementById('proff_link');  
-                if (u.style.display === 'flex') 
-                    {u.style.display = 'none';
-                } else { u.style.display = 'flex';
-        } };
-        document.getElementById('proff').onclick = function() {changeBlock('proff_link') };
-
-</script>
- <script>
-
-    let input = document.getElementById('date');
-    let result = document.getElementById('result');
-    input.onchange = getAge;
-    getAge();
-     function getAge() {
-        let strDate = document.getElementById('date').value;
-        let arrDate = strDate.split(/\D+/g);
-        let date = new Date(arrDate[2], arrDate[1] - 1, arrDate[0]);
-        let now = new Date();
-        let age = now.getFullYear() - date.getFullYear();
-        now.setFullYear(date.getFullYear());
-        if (now < date) age--;
-        result.innerHTML = age+' years old';
-    }    
-</script>
-
-<script>
-$('body').append('<button class="btn_up" />');
-$('.btn_up').click(function() {
-    $('body').animate({'scrollTop': 0 }, 1000);
-    $('html').animate({'scrollTop': 0 }, 1000);
-});
-
-$(window).scroll(function(){
-    if($(window).scrollTop() > 200){
-        $('.btn_up').addClass('active');
-    }
-    else{
-        $('.btn_up').removeClass('active');
-    }
-});
-
-</script>
-
-<script>
-        $('#btn_skill').click(function(a){
-        a.preventDefault();
-        $('body, html').animate({ scrollTop: $('#btn_skill_scroll').offset().top }, 1000);
-        });
-</script>
-<script>
-        $('#btn_exp').click(function(b){
-        b.preventDefault();
-        $('body, html').animate({ scrollTop: $('#btn_exp_scroll').offset().top }, 1000);
-        });
-</script>
-<script>
-        $('#btn_courses').click(function(c){
-        c.preventDefault();
-        $('body, html').animate({ scrollTop: $('#btn_courses_scroll').offset().top }, 1000);
-        });
-</script>
-
-
-
+    <script>
+        changeBlock = function(id) {
+            var u = document.getElementById('proff_link');  
+                    if (u.style.display === 'flex') 
+                        {u.style.display = 'none';
+                    } else { u.style.display = 'flex';
+            } };
+            document.getElementById('proff').onclick = function() {changeBlock('proff_link') };
+    
+    </script>
+     <script>
+    
+        let input = document.getElementById('date');
+        let result = document.getElementById('result');
+        input.onchange = getAge;
+        getAge();
+         function getAge() {
+            let strDate = document.getElementById('date').value;
+            let arrDate = strDate.split(/\D+/g);
+            let date = new Date(arrDate[2], arrDate[1] - 1, arrDate[0]);
+            let now = new Date();
+            let age = now.getFullYear() - date.getFullYear();
+            now.setFullYear(date.getFullYear());
+            if (now < date) age--;
+            result.innerHTML = age+' years old';
+        }    
+    </script>
+    <script>
+    $('body').append('<button class="btn_up" />');
+    $('.btn_up').click(function() {
+        $('body').animate({'scrollTop': 0 }, 1000);
+        $('html').animate({'scrollTop': 0 }, 1000);
+    });
+    
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 200){
+            $('.btn_up').addClass('active');
+        }
+        else{
+            $('.btn_up').removeClass('active');
+        }
+    });
+    
+    </script>
+    <script>
+            $('#btn_skill').click(function(a){
+            a.preventDefault();
+            $('body, html').animate({ scrollTop: $('#btn_skill_scroll').offset().top }, 1000);
+            });
+    </script>
+    <script>
+            $('#btn_exp').click(function(b){
+            b.preventDefault();
+            $('body, html').animate({ scrollTop: $('#btn_exp_scroll').offset().top }, 1000);
+            });
+    </script>
+    <script>
+            $('#btn_courses').click(function(c){
+            c.preventDefault();
+            $('body, html').animate({ scrollTop: $('#btn_courses_scroll').offset().top }, 1000);
+            });
+    </script>
 </body>
 </html>
