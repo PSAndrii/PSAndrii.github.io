@@ -232,22 +232,16 @@ display: inline;
         align-items: center          
     }
     .header-pading-top {
-        padding-top: 5%;
+        padding-top: 2%;
     }
   
 }
 @media screen and (max-width:460px) {
-    .header{
-        display: flex;
-        flex-direction: column;
-        align-items: center
-    }
+    
     .header-screem-min {
         display: none;
     }
-    .header-pading-top {
-        padding-top: 2%;
-    }
+ 
     
 }
 
