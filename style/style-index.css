@@ -134,7 +134,7 @@ a {
         
 }
 .header-pading-top {
-    padding-top: 8em;
+    padding-top: 8%;
 }
 
 .header-photo-padding {
@@ -245,7 +245,6 @@ display: inline;
     .header-screem-min {
         display: none;
     }
-  
     
 }
 
