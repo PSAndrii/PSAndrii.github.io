@@ -245,6 +245,7 @@ display: inline;
     .header-screem-min {
         display: none;
     }
+  
     
 }
 
@@ -253,7 +254,7 @@ display: inline;
 /* перша секція зі скілами */
 section{
     box-sizing: border-box;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .section-background-color{
