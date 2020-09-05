@@ -232,7 +232,7 @@ display: inline;
         align-items: center          
     }
     .header-pading-top {
-        padding-top: 2em;
+        padding-top: 5%;
     }
   
 }
@@ -244,6 +244,9 @@ display: inline;
     }
     .header-screem-min {
         display: none;
+    }
+    .header-pading-top {
+        padding-top: 2%;
     }
     
 }
